@@ -6,7 +6,11 @@ function App() {
   const [count, setCount] = useState(0)
 
   const counterFunction = () => {
-    setCount((count) => count + 1);
+    setCount(count + 1);
+  }
+
+  const resetCounter = () => {
+    setCount(0);
   }
 
   return (
@@ -18,6 +22,12 @@ function App() {
             onClick={counterFunction}
           >
             Count is {count}
+          </button>
+          <button
+            className="buttonStyle"
+            onClick={resetCounter}
+          >
+            ⟳
           </button>
         </div>
       </body>

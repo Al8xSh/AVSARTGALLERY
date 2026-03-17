@@ -6,6 +6,7 @@
 }
 
 .buttonStyle{
+  margin: 1px;
   background-color: transparent;
   border: 1px solid;
   border-radius: 15px;
