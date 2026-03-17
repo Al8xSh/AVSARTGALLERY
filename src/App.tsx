@@ -1,7 +1,4 @@
 import React, { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
@@ -14,20 +11,16 @@ function App() {
 
   return (
     <React.Fragment>
-      <section id="center">
-        <div className="hero">
-          <div>AVS ART GALLERY</div>
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+      <body className='backgroundImage'>
+        <div className='buttonByCenterOfScreen'>
+          <button
+            className="buttonStyle"
+            onClick={counterFunction}
+          >
+            Count is {count}
+          </button>
         </div>
-        <button
-          className="counter"
-          onClick={counterFunction}
-        >
-          Count is {count}
-        </button>
-      </section>
+      </body>
     </React.Fragment>
   )
 }
